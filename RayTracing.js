@@ -17,8 +17,8 @@ function setup() {
   walls.push(new Boundary(150+100, 170+100, 100+100, 170+100));
   walls.push(new Boundary(100+100, 170+100, 100+100, 120+100));
 
-  walls.push(new Boundary(350, 250, 390, 300));
-  walls.push(new Boundary(390, 300, 250, 390));
+  walls.push(new Boundary(350, 250, 380, 300));
+  walls.push(new Boundary(380, 300, 250, 390));
   walls.push(new Boundary(250, 390, 350, 250));
 
   walls.push(new Boundary(150+100, 170+100, 100+100, 170+100));
@@ -27,10 +27,10 @@ function setup() {
 
   walls.push(new Boundary(300, 100, 200, 120));
 
-  walls.push(new Boundary(-1, -1, width, -1));
-  walls.push(new Boundary(width, -1, width, height));
-  walls.push(new Boundary(width, height, -1, height));
-  walls.push(new Boundary(-1, height, -1, -1));
+  walls.push(new Boundary(10, 10, width-10, 10));
+  walls.push(new Boundary(width-10, 10, width-10, height-10));
+  walls.push(new Boundary(width-10, height-10, 10, height-10));
+  walls.push(new Boundary(10, height-10, 10, 10));
 
   particle = new Particle();
 }

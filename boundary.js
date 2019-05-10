@@ -8,7 +8,7 @@ class Boundary {
   show(){
     push();
     stroke(color(194, 224, 74));
-    strokeWeight(4);
+    strokeWeight(2);
     line(this.a.x, this.a.y, this.b.x, this.b.y);
     pop();
   }
